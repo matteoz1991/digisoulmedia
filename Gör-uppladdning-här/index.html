@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digisoul Media - Webb & UX Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- Background glow map -->
+    <div class="bg-glow"></div>
+
+    <a href="#hero" class="page-logo-link">
+      <img src="/logga1_trans.png" alt="Digisoul Media" class="page-logo" />
+    </a>
+
+    <!-- Pilled Sticky Nav -->
+    <nav class="nav-pill">
+      <div class="nav-logo">
+        <iconify-icon icon="lucide:asterisk" width="24" height="24"></iconify-icon>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Hem</a></li>
+        <li><a href="#services">Tjänster</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Priser</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <div class="nav-mobile-btn">
+        <iconify-icon icon="lucide:menu" width="24" height="24"></iconify-icon>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-bg">
+          <img src="/hero-bg-v2.png" alt="Hero Background">
+          <div class="hero-bg-overlay"></div>
+        </div>
+        
+        <div class="container hero-content animate-up text-center">
+          <!-- status indicator removed to look less generic -->
+          <h1 class="hero-title">Vi bygger webbplatser som <span class="text-gradient">säljer</span><br><span style="font-size: 0.6em; opacity: 0.9; color: var(--c-text-muted);">— för företagare som menar allvar.</span></h1>
+          <p class="hero-subtitle mx-auto">Skräddarsydd webbutveckling, innovativ design och smarta digitala strategier för att driva din affär framåt.</p>
+          <div class="hero-actions justify-center">
+            <a href="#contact" class="btn btn-primary">Hör av dig <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+            <a href="#portfolio" class="btn btn-secondary">Våra projekt</a>
+          </div>
+        </div>
+
+        <!-- hero stats removed temporarily -->
+      </section>
+
+      <!-- Digital Business Card -->
+      <section id="about" class="business-card-section">
+        <div class="container animate-up">
+          <div class="glass-card b-card">
+            <div class="b-card-image">
+              <img src="/profilbild1.png" alt="Mattias - Digisoul Media">
+            </div>
+            <div class="b-card-info">
+              <h2>Mattias</h2>
+              <p class="b-role">Webbdesigner & Digital Konsult</p>
+              <div class="b-bio">
+                <p>Jag heter Mattias och driver Digisoul Media — en webbyrå i Göteborg där jag hjälper företagare att synas, sticka ut och växa online.</p>
+                <p style="margin-top: 1rem;">Jag jobbar med webbutveckling, digital design och branding, SEO och consulting — allt under ett tak. Jag gillar att arbeta nära mina kunder och leverera lösningar som faktiskt gör skillnad för affären, inte bara ser bra ut på skärmen.</p>
+              </div>
+              
+              <div class="b-contact-links">
+                <a href="tel:+46737255718" class="btn btn-outline">
+                  <iconify-icon icon="lucide:phone"></iconify-icon> 073-725 57 18
+                </a>
+                <a href="mailto:hej@digisoulmedia.se" class="btn btn-outline">
+                  <iconify-icon icon="lucide:mail"></iconify-icon> hej@digisoulmedia.se
+                </a>
+                <a href="#" class="btn btn-outline" title="Länk till LinkedIn (Lägg till i koden senare)">
+                  <iconify-icon icon="lucide:linkedin"></iconify-icon> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <h2 class="section-title animate-up">Mina <span>Tjänster</span></h2>
+          <div class="services-grid">
+            <div class="glass-card service-card animate-up">
+              <iconify-icon icon="lucide:layout-template" class="service-icon"></iconify-icon>
+              <h3>Hemsidebygge</h3>
+              <p>Få fler kunder och öka försäljningen med en blixtsnabb hemsida. Den designas konverteringsoptimerad och inkluderar alltid grundläggande teknisk SEO för att synas på Google.</p>
+            </div>
+            <div class="glass-card service-card animate-up delay-1">
+              <iconify-icon icon="lucide:pen-tool" class="service-icon"></iconify-icon>
+              <h3>Digital Design & Branding</h3>
+              <p>Stärk ert varumärke med en modern grafisk profil som bygger förtroende och får er att sticka ut.</p>
+            </div>
+            <div class="glass-card service-card animate-up delay-2">
+              <iconify-icon icon="lucide:cpu" class="service-icon"></iconify-icon>
+              <h3>Consulting & AI-automation</h3>
+              <p>Spara tid och sänk kostnader. Vi hjälper er att effektivisera processer och fatta smartare digitala beslut.</p>
+            </div>
+          </div>
+          <div class="services-footer animate-up" style="text-align: center; margin-top: 4rem;">
+            <a href="/Digisoul_Prislista_2025.pdf" download="Digisoul_Prislista_2025.pdf" class="btn btn-secondary">
+              <iconify-icon icon="lucide:file-down"></iconify-icon> Ladda ner fullständig prislista (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <h2 class="section-title animate-up">Utvalda <span>Projekt</span></h2>
+          <div class="portfolio-grid">
+            <!-- Centrum Lack -->
+            <div class="portfolio-card glass-card animate-up" data-project="centrumlack">
+              <div class="port-img-wrap">
+                <div class="port-badge">Bas</div>
+                <img src="/port-centrum-logo.png" alt="Centrum Lack" class="port-main-img">
+                <div class="port-overlay">
+                  <span class="btn btn-primary btn-sm">Läs mer →</span>
+                </div>
+              </div>
+              <div class="port-info">
+                <span>Professionell Lackering</span>
+                <h3>Centrum Lack</h3>
+              </div>
+            </div>
+            <!-- Oak Design Door -->
+            <div class="portfolio-card glass-card animate-up delay-1" data-project="oakdesign">
+              <div class="port-img-wrap">
+                <div class="port-badge">Mellan</div>
+                <img src="/port-oak-logo.png" alt="Oak Design Door" class="port-main-img">
+                <div class="port-overlay">
+                  <span class="btn btn-primary btn-sm">Läs mer →</span>
+                </div>
+              </div>
+              <div class="port-info">
+                <span>Premiumsnickeri</span>
+                <h3>Oak Design Door</h3>
+              </div>
+            </div>
+            <!-- Avtalsväggen -->
+            <div class="portfolio-card glass-card animate-up delay-2" data-project="avtalsvaggen">
+              <div class="port-img-wrap">
+                <div class="port-badge">Premium</div>
+                <img src="/port-avtals.png" alt="Avtalsväggen" class="port-main-img">
+                <div class="port-overlay">
+                  <span class="btn btn-primary btn-sm">Läs mer →</span>
+                </div>
+              </div>
+              <div class="port-info">
+                <span>Juridisk SaaS</span>
+                <h3>Avtalsväggen</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="testimonial-section">
+        <div class="container animate-up">
+          <div class="glass-card testimonial-card">
+            <iconify-icon icon="lucide:quote" class="quote-icon"></iconify-icon>
+            <p class="quote-text">"Sedan vi bytte till Digisoul Media har vi sett en otrolig ökning i våra konverteringar. Deras förmåga att skapa webbplatser som faktiskt säljer är oslagbar."</p>
+            <div class="quote-author">
+               <strong>Johan Svensson</strong>
+               <span>VD, TechNord AB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing-section">
+        <div class="container">
+          <h2 class="section-title animate-up">Tydliga <span>Priser</span></h2>
+          <div class="pricing-grid">
+            <div class="glass-card pricing-card animate-up">
+              <h3>Bas</h3>
+              <div class="price">4 900<span>kr</span></div>
+              <p>Enkel och effektiv startsida för att synas online snabbt.</p>
+              <ul>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> 1–3 sidor</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Responsiv design</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Kontaktformulär</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Grundläggande SEO</li>
+              </ul>
+            </div>
+            <div class="glass-card pricing-card featured animate-up delay-1">
+              <div class="badge">Populärast</div>
+              <h3>Mellan</h3>
+              <div class="price">9 900<span>kr</span></div>
+              <p>För företaget som behöver en komplett och säljande lösning.</p>
+              <ul>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> 5–8 sidor</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Unik design</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> SEO-optimerad</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Google Analytics</li>
+              </ul>
+            </div>
+            <div class="glass-card pricing-card animate-up delay-2">
+              <h3>Premium</h3>
+              <div class="price">19 900<span>kr+</span></div>
+              <p>Kraftfull webbplats med tunga integrationer och skräddarsydd funktionalitet.</p>
+              <ul>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> 10+ sidor</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Bokningssystem</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Flerspråkig miljö</li>
+                <li><iconify-icon icon="lucide:check"></iconify-icon> Avancerade integrationer</li>
+              </ul>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 3rem;" class="animate-up">
+             <div class="pricing-footnote" style="margin-bottom: 2rem;">
+               <em>*Drift, säkerhet och support erbjuds som ett frivilligt tillval för 399 kr/mån. Under de 3 första månaderna ingår dessutom 1 kostnadsfri ändring per månad. Väljer du att själv ansvara för hosting eller köra utan vårt säkerhetspaket tillkommer inga som helst månadskostnader. Logodesign och Google Ads-uppsättning köps precis som vanligt genom tillval.</em>
+             </div>
+             <a href="#contact" class="btn btn-outline">Osäker på vilket paket som passar? Kontakta mig</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container animate-up">
+          <div class="glass-card contact-wrapper">
+            <div class="contact-info">
+              <h2>Redo att sätta <br><span>igång?</span></h2>
+              <div class="contact-benefits">
+                <p><iconify-icon icon="lucide:check-circle-2" class="success"></iconify-icon> Vi svarar oftast inom 12 timmar</p>
+                <p><iconify-icon icon="lucide:check-circle-2" class="success"></iconify-icon> Vi kan teckna NDA vid behov</p>
+                <p><iconify-icon icon="lucide:check-circle-2" class="success"></iconify-icon> Direkttillgång till expertkonsult</p>
+              </div>
+              <div class="contact-direct mt-auto">
+                <a href="mailto:hej@digisoulmedia.se" class="mail-link">hej@digisoulmedia.se</a>
+                <p>Kort om tid? Boka ett direktmöte.</p>
+                <a href="#" class="btn btn-outline btn-sm mt-3">Boka ett möte</a>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              
+              <div class="form-group-pilled">
+                <label>Tjänst</label>
+                <div class="pill-options">
+                  <span class="pill-input active">Bas</span>
+                  <span class="pill-input">Mellan</span>
+                  <span class="pill-input">Premium</span>
+                  <span class="pill-input">Abonnemang/Drift</span>
+                  <span class="pill-input">Annat</span>
+                </div>
+              </div>
+
+              <div class="form-group-pilled">
+                <label>Budget</label>
+                <div class="pill-options">
+                  <span class="pill-input active">Under 15k</span>
+                  <span class="pill-input">15k - 50k</span>
+                  <span class="pill-input">Över 50k</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Fullständigt namn*</label>
+                  <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-post*</label>
+                  <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="details">Projektdetaljer*</label>
+                <textarea id="details" rows="4" placeholder="Beskriv vad du vill åstadkomma..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Skicka förfrågan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cookie Settings Modal -->
+      <div id="cookie-settings-modal" class="modal">
+        <div class="modal-backdrop" id="cookie-settings-backdrop"></div>
+        <div class="modal-container glass-card cookie-settings-wrap">
+          <button id="close-cookie-settings" class="modal-close">&times;</button>
+          <div class="cookie-settings-header">
+            <h2>Cookie-<span>inställningar</span></h2>
+            <p>Välj vilka cookies du tillåter oss använda. Nödvändiga cookies krävs för att webbplatsen ska fungera.</p>
+          </div>
+          <div class="cookie-settings-body">
+            <div class="cookie-option">
+              <div class="cookie-option-info">
+                <h3>Nödvändiga</h3>
+                <p>Krävs för grundläggande funktioner såsom säkerhet och nätverkshantering.</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" checked disabled>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="cookie-option">
+              <div class="cookie-option-info">
+                <h3>Analys</h3>
+                <p>Hjälper oss förstå hur besökare interagerar med webbplatsen för att förbättra upplevelsen.</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="cookie-opt-analytics">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="cookie-option">
+              <div class="cookie-option-info">
+                <h3>Marknadsföring</h3>
+                <p>Används för att visa relevanta annonser och mäta deras effektivitet.</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="cookie-opt-marketing">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="cookie-settings-footer">
+            <button id="cookie-save-choices" class="btn btn-secondary btn-block">Spara mina val</button>
+            <button id="cookie-accept-modal" class="btn btn-primary btn-block">Godkänn alla</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div id="project-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container glass-card">
+          <button id="close-modal" class="modal-close">&times;</button>
+          <div class="modal-grid">
+            <div class="modal-visual">
+              <div class="modal-main-img-wrap">
+                <img id="modal-img" src="" alt="Projekt">
+              </div>
+              <div id="modal-gallery" class="modal-gallery">
+                <!-- Thumbs injected by JS -->
+              </div>
+            </div>
+            <div class="modal-content">
+              <div class="modal-header">
+                <span id="modal-badge" class="badge">Paket</span>
+                <h2 id="modal-title">Projektnamn</h2>
+                <p id="modal-cat" class="text-gradient">Kategori</p>
+              </div>
+              <div class="modal-body">
+                <h3>Om projektet</h3>
+                <p id="modal-desc">Beskrivning...</p>
+                <div class="modal-tech">
+                  <h3>Teknologi</h3>
+                  <div id="modal-tech-list" class="tech-tags">
+                    <!-- Tags injected by JS -->
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary btn-block" id="modal-cta">Jag vill ha något liknande</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner display-none">
+      <div class="cookie-content">
+        <div class="cookie-text-wrap">
+          <iconify-icon icon="lucide:cookie" class="cookie-icon"></iconify-icon>
+          <p>Vi använder cookies för att optimera din upplevelse och analysera trafik på vår webbplats.</p>
+        </div>
+        <div class="cookie-actions">
+          <button id="cookie-accept" class="btn btn-primary btn-sm">Acceptera alla</button>
+          <button id="cookie-settings" class="btn btn-secondary btn-sm">Inställningar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p>&copy; 2026 Digisoul Media. Alla rättigheter reserverade.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Cookie Trigger -->
+    <button id="cookie-reopen-btn" class="cookie-reopen-btn" aria-label="Cookie-inställningar">
+      <iconify-icon icon="lucide:cookie"></iconify-icon>
+      <span class="cookie-label">Cookies</span>
+    </button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
